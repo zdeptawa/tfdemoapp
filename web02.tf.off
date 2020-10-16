@@ -34,7 +34,7 @@ resource "azurerm_managed_disk" "tfdemo_managed_disk_web02" {
   tags = { environment = "demo", build = "tfdemo" }
 }
 
-# Create web01
+# Create web02
 resource "azurerm_virtual_machine" "tfdemo_web02" {
   name                  = "tfdemo_web02"
   location              = azurerm_resource_group.tfdemo_resource_group.location
